@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "amazon-wish-list-total",
+    "author": "Haruto Tanaka",
+    "description": "Chrome extension to show the total your amazon wish list",
+    "version": "1.0.0",
+    "web_accessible_resources": ["*"],
+    "permissions": ["storage"],
+    "content_scripts": [
+        {
+            "matches": ["https://www.amazon.co.jp/hz/wishlist/ls/*"],
+            "css": ["js/list-total.js"]
+        }
+    ]
+}
